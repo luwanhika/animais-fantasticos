@@ -12,7 +12,7 @@
     
 </head>
 <body>
-    <nav class="menu js-menu">
+    <nav class="menu" data-menu="suave">
         <ul>
             <li><a href="#animais">Animais</a></li>
             <li><a href="#faq">Faq</a></li>
@@ -21,10 +21,10 @@
         </ul>
     </nav><!--menu-->
 
-    <section class="grid-section animais js-scroll" id="animais">
+    <section class="grid-section animais" data-anime="scroll" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1><!--titulo-->
 
-        <ul class="animais-lista js-tabmenu">
+        <ul class="animais-lista" data-tab="menu">
             <li>
                 <img src="img/imagem4.jpg">
             </li>
@@ -45,8 +45,8 @@
             </li>
         </ul><!--animais-lista js-tabmenu-->
 
-        <div class="animais-descricao js-tabcontent">
-            <section>
+        <div class="animais-descricao" data-tab="content">
+            <section data-anime="show-right">
                 <h2>Raposa</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Esse aliquam pariatur fugiat sed, consectetur placeat veritatis quibusdam
@@ -59,7 +59,7 @@
                     Earum commodi pariatur nobis quas.</p>
             </section>
             
-            <section>
+            <section data-anime="show-right">
                 <h2>Esquilo</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Esse aliquam pariatur fugiat sed, consectetur placeat veritatis quibusdam
@@ -72,7 +72,7 @@
                     Earum commodi pariatur nobis quas.</p>
             </section>
             
-            <section>
+            <section data-anime="show-down">
                 <h2>Urso</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Esse aliquam pariatur fugiat sed, consectetur placeat veritatis quibusdam
@@ -85,7 +85,7 @@
                     Earum commodi pariatur nobis quas.</p>
             </section>
             
-            <section>
+            <section data-anime="show-down">
                 <h2>Lobo</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Esse aliquam pariatur fugiat sed, consectetur placeat veritatis quibusdam
@@ -98,7 +98,7 @@
                     Earum commodi pariatur nobis quas.</p>
             </section>
             
-            <section>
+            <section data-anime="show-right">
                 <h2>Macaco</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Esse aliquam pariatur fugiat sed, consectetur placeat veritatis quibusdam
@@ -111,7 +111,7 @@
                     Earum commodi pariatur nobis quas.</p>
             </section>
             
-            <section>
+            <section data-anime="show-right">
                 <h2>Leão</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Esse aliquam pariatur fugiat sed, consectetur placeat veritatis quibusdam
@@ -126,9 +126,9 @@
         </div><!--animais-descricao ja-tabcontent-->
     </section><!--grid-section animais-->
 
-    <section class="grid-section faq js-scroll" id="faq">
+    <section class="grid-section faq" data-anime="scroll" id="faq">
         <h1 class="titulo">FAQ</h1>
-        <dl class="faq-lista js-accordion">
+        <dl class="faq-lista" data-anime="accordion">
             <dt>Qual a idade dos animais?</dt>
             <dd>As raposas são animais mamíferos e onívoros pertencentes à família
             Canidae. São vulpídeos de porte médio, caracterizado por um focinho
@@ -149,7 +149,7 @@
         </dl><!--faq-lista-->
     </section><!--grid-section faq-->
 
-    <section class="grid-section contato js-scroll" id="contato" >
+    <section class="grid-section contato" data-anime="scroll" id="contato" >
         <h1 class="titulo">Contato</h1>
         <div class="mapa">
             <img src="img/mapa.jpg">
@@ -165,6 +165,7 @@
     <footer class="copy">
         <p>Todos os direitos reservados.</p>
     </footer><!--copy-->
+    <script src="animacoes.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
