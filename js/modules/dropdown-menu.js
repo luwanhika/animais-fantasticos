@@ -13,7 +13,7 @@ export default function initDropdownMenu() {
     this.classList.add('active');
     outsideClick(this, ['touchstart', 'click'], () => {
       this.classList.remove('active');
-    });
+    })
   };
 }
 
